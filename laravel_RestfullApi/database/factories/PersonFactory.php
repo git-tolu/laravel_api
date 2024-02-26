@@ -3,7 +3,6 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Faker\Generator as Faker;
 
 /**
  * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Person>
@@ -19,11 +18,6 @@ class PersonFactory extends Factory
     {
         return [
             //
-            'firstname' => 'adejumobi',
-            'last_name' => 'toluwanimi',
-            'phone' => '09130389749',
-            'email' => 'adejumobitoluwanimi2@gmail.com',
-            'city' => 'lagos',
         ];
     }
 }
