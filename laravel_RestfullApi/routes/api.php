@@ -19,3 +19,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/index', [personController::class, 'index']);
+Route::post('/register', [personController::class, 'store']);
+Route::get('/single/{id}', [personController::class, 'show']);
+Route::put('/update/{id}', [personController::class, 'update']);
+Route::delete('/delete/{id}', [personController::class, 'destroy']);
