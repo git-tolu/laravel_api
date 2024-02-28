@@ -48,7 +48,7 @@ class personController extends Controller
     public function show($id)
     {
         $persons = Person::find($id);
-        if(!$persons){
+        if($persons){
             return response()->json([$persons], 202);
         }else{
             return response()->json([
